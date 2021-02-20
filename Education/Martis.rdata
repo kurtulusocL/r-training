@@ -1,0 +1,63 @@
+```{r}
+matvek<-c(1.1,1.2,1.3,1.4,1.5,1.6)
+mat <- matrix(matvek,2,3)
+mat
+
+matrix(0,2,3)
+
+```
+```{r}
+mat <-matrix(c(1.1,1.2,1.3,1.4,1.5,1.6),2,3)
+mat
+
+mat <-matrix(c(1.1,1.2,1.3,1.4,1.5,1.6),2,3,byrow = TRUE)
+mat
+
+t(mat) ##transpoze
+```
+```{r}
+matris1 <- matrix(c(1.1,1.2,1.3,1.4,1.5,1.6),2,3)
+matris1
+
+matris1[2,]
+matris1[,3]
+```
+```{r}
+matris1 <- matrix(c(1.1,1.2,1.3,1.4,1.5,1.6),2,3)
+rownames(matris1)<-c("a","b")
+colnames(matris1)<-c("c","d","e")
+matris1
+```
+```{r}
+A<-c(1.412,1.612,1.712,3.412,4.312,7.123,9.001,8.123)
+B<-c(2.412,2.612,2.712,2.412,3.312,6.123,8.001,7.123)
+C<-c(0.412,1.612,3.712,4.412,5.312,6.123,7.001,8.123)
+D<-c(2.412,3.612,5.712,6.412,7.312,8.123,9.001,10.123)
+gozlem<-data.frame(A,B,C,D)
+gozlem
+
+liste<-list(A,B,C,D)
+liste
+
+gozlemListe<- as.data.frame(liste)
+gozlemListe
+
+liste<-list(a=A, b=B, c=C, d=D)
+liste
+
+gozlemData<-as.data.frame(liste)
+gozlemData
+
+sgozlem<-do.call(rbind,gozlemData)
+sgozlem
+```
+```{r}
+A<-c(1.412,1.612,1.712,3.412,4.312,7.123,9.001,8.123)
+B<-c(2.412,2.612,2.712,2.412,3.312,6.123,8.001,7.123)
+C<-c(0.412,1.612,3.712,4.412,5.312,6.123,7.001,8.123)
+D<-c(2.412,3.612,5.712,6.412,7.312,8.123,9.001,10.123)
+gozlem<-data.frame(A,B,C,D)
+gozlem
+```
+
+

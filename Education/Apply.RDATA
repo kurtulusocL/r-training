@@ -1,0 +1,28 @@
+
+```{r}
+liste <- list(x=10:30 , y=exp(10:20) , z= c(1,2,3,4,5,6))
+lapply(liste,mean)
+
+x <- lapply(liste, mean)
+x
+```
+```{r}
+lapply(8:10, function(x) c(x,x^2,x^3))
+
+```
+```{r}
+liste<- list(a=rnorm(10),b=rnorm(20),c=rnorm(30))
+lapply(liste, mean)
+sapply(liste, mean)
+```
+```{r}
+list1 <-list(x=10:15,y=15:20)
+list2 <- list(k=c(20:25),t=c(25:30))
+mapply(sum , list1$x , list2$t)
+```
+```{r}
+list=list(x=1:5,y=10:15,z=15:20)
+vektor1=unlist(list)
+vektor1
+```
+

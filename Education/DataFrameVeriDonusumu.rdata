@@ -1,0 +1,20 @@
+```{r}
+list.files();
+
+data <- read.csv('singapore-airbnb.csv', header=T, sep=" ")
+view(data)
+names(data)
+
+class(data$id) ##id veri tipi kontrolü
+class(data$name)
+
+
+data$name <- as.character(data$name)
+class(data$name)
+
+data$id <- as.numeric(data$id)
+class(data$id)
+
+
+```
+

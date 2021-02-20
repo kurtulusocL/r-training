@@ -1,0 +1,21 @@
+---
+title: "Veri_Okuma"
+output: html_document
+---
+
+
+```{r}
+data()
+
+data(package= .packages(all.available = TRUE))
+
+
+```
+```{r}
+library(boot)
+
+df<-survival
+df
+```
+
+

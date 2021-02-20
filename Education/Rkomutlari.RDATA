@@ -1,0 +1,13 @@
+```{r}
+getwd()
+save.image(file="Rkomutlari.RDATA")
+
+data()
+```
+```{r}
+data(Cars93,package = "MASS")
+Cars93
+
+library(MASS)
+```
+

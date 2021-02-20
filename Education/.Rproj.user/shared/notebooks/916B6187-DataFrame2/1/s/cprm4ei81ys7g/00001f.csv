@@ -1,0 +1,4 @@
+"0",""
+"0","pop <- rbind(pop, yeniSatir)"
+"2","Error in rbind(pop, yeniSatir) : 'pop' nesnesi bulunamadı
+"

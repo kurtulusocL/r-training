@@ -1,0 +1,24 @@
+```{r}
+numerical <- c(1.1,4.5,5.6,7.5)
+integer <- c(1,2,3,4,5,6)
+categorical <- c("Ahmet","Mehmet","Ali","Ayşe,","Merve")
+factorical <- c("Katılıyorum", "Katılmıyorum","Kararsızım")
+logical <- c(TRUE, FALSE,FALSE, TRUE)
+
+## veri türü kontrolü
+
+class(numerical)
+class(integer)
+class(categorical)
+class(factorical)
+class(logical)
+
+## donüşümleri
+
+integer <- as.integer(integer)
+class(integer)
+
+integer <- as.numeric(integer)
+class(integer)
+```
+

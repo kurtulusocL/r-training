@@ -1,0 +1,5 @@
+"0","x <- rbind(df1,df2)
+"
+"2","Error in match.names(clabs, names(xi)) : 
+  names do not match previous names
+"

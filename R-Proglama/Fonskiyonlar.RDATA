@@ -1,0 +1,17 @@
+
+#Fonsiyonlar
+
+```{r}
+kare_alma<-function(x){
+  x^2
+}
+kare_alma(3)
+
+
+kare_genis<-function(x,y){
+  
+  (x^2)*y
+}
+kare_genis(3,4)
+```
+

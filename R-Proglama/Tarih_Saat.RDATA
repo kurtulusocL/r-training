@@ -1,0 +1,39 @@
+---
+title:"R Notebook"
+outout:html_notebook
+---
+
+```{r}
+install.packages("lubridate")
+library(lubridate)
+
+
+df_bir<- data.frame(
+  yas=c(10,11,30),
+  boy=c(120,140,160),
+  dogum=c("20100201","19890315","19890308")
+  
+)
+str(df_bir)
+df_bir$dogum <- ymd(df_bir$dogum)
+
+
+df_iki<- data.frame(
+  yas=c(10,11,30),
+  boy=c(120,140,160),
+  dogum=c("2010_02_01","1989_03_15","1989_03_08")
+  
+)
+
+df_uc<- data.frame(
+  yas=c(10,11,30),
+  boy=c(120,140,160),
+  dogum=c("01022010","15031989","08031989")
+  
+)
+
+
+library(lubridate)
+
+```
+

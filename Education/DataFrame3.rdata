@@ -1,0 +1,31 @@
+```{r}
+mtcars
+
+mtcars[[1]]
+mtcars[[3]]
+
+mtcars[3]
+
+mtcars[c(3,4,5)]
+
+mtcars[,3]
+
+mtcars[,c(1,2,3)]
+
+mtcars[1:4]
+
+names(mtcars)
+mtcars[c("mpg","hp","qsec","am")]
+```
+```{r}
+library("MASS")
+Cars93
+
+x<- subset(Cars93,select=Model)
+x
+
+subset(Cars93,select = c("Model","Price","MPG.city"), subset=(Price>16))
+
+subset(Cars93, select=c("Model","Max.Price","Min.Price","MPG.city"),subset = (Max.Price < 32.0 & Min.Price > 16.4 & Origin == "USA"))
+```
+

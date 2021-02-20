@@ -1,0 +1,54 @@
+```{r}
+t <- 1:5
+t
+s <- 5:1
+s
+```
+```{r}
+seq(from=1, to=50, by=5/2)
+```
+```{r}
+rep(5, times=5)
+```
+```{r}
+a <- 3
+a==3
+a!=3
+
+```
+```{r}
+v <- c(3,pi,4)
+w <- c(pi, pi, pi)
+
+any(v==pi)
+all(v==pi)
+all(w==pi)
+
+if(v == w){
+  print("eşitir")
+}else{
+  print("degildir.")
+}
+```
+```{r}
+x <- c(1,5,6,7,14,18,23,25,28,56)
+x[1]
+x[5]
+x[1:4]
+x[c(1,5,7)]
+x[-3]
+x[-4:-7]
+
+median(x)
+x[x>median(x)]
+x[(x<quantile(x,0.5))|(x>quantile(x,0.95))]
+
+```
+```{r}
+yillar <- c(1990,1991,1992,1993)
+names(yillar) <- c("a","b","c","d")
+yillar
+
+```
+
+

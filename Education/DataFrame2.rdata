@@ -1,0 +1,8 @@
+```{r}
+yeniSatir <-data.frame(city = "West Dundee" , country = "Kane" , state = "IL" , pop = 5523)
+yeniSatir
+
+pop <- rbind(pop, yeniSatir)
+pop
+```
+

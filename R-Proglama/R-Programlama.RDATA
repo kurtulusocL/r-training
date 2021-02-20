@@ -1,0 +1,66 @@
+```{r}
+a<-1
+
+a
+```
+```{r}
+2*2
+a<-8
+b<-9
+a*b
+a
+b
+```
+
+#1-10 arası sayılarla işlemler
+```{r}
+veri <-1:10
+veri
+veri[1]
+veri[5]
+veri[1:4]
+
+veri[veri>5]
+
+a<-veri[veri>1&veri<4]
+a
+b<-veri[veri>3|veri<4]
+b
+```
+
+
+
+###fonksiyonlar
+##kareök alma - log - mutlak değer
+```{r}
+sqrt(9)
+log(9)
+abs(-9)
+```
+```{r}
+a<-sqrt(9)
+a
+b<-log(a)
+b
+c<-abs(-b)
+d<-c*9
+d
+
+```
+
+
+
+
+
+
+###temel fonksiyonlar
+```{r}
+sessionInfo()
+getwd()
+#setwd()
+dir()
+list.files()
+#file.exists() dosyavarmı
+file.exists("deneme")
+ls()
+```

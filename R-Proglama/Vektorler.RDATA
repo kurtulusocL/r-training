@@ -1,0 +1,148 @@
+---
+title: "Veri Tipleri"
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+Vektor Olusturma
+```{r}
+a<-rep(1:5,2)
+a
+
+a<-1:10
+a
+
+a<-c(1,2,3,4,5,6)
+a
+
+is.vector(a)
+
+b<-c("ali","ahmet","mehmet")
+b
+is.vector(b)
+
+typeof(a)
+typeof(b)
+
+typeof(1L)
+```
+
+
+Kosullu Eleman Secimi
+```{r}
+veri<-10:100
+veri
+
+is.vector(veri)
+
+veri[2]
+
+veri[c(1,11,21,31)]
+
+veri[veri>20&veri<30]
+```
+
+
+Matris Olusturma
+```{r}
+a<-1:9
+matrix(a,3,3)
+
+
+v1<-c(3,2,1,5,6)
+v2<-c(1,2,3,4,5)
+v3<-c(6,6,88,99,88)
+
+cbind(v1,v2,v3)
+A <- rbind(v1,v2,v3)
+```
+
+
+Matris Eleman Islemleri
+```{r}
+A
+
+A[c(1,2),]
+A[,1]
+A[1,1]
+A[3,4]
+```
+
+
+Kosullu Eleman Secimi
+```{r}
+A[A[,1]>2,1] 
+A[3, A[3,]>50&A[3]<100]
+
+```
+
+
+###Data Frame
+
+Data Frame Oluşturma
+```{r}
+
+df <- data.frame(
+  
+  isimler=c("Kurtulus","Ahmet","Mehmet"),
+  yaslar=c(32,21,12),
+  boylar=c(167,170,200)
+  
+)
+df
+
+```
+
+
+Data Frame Yeni Degisken Ekleme/Silme
+```{r}
+df$kilo <-c(80,92,112)
+df
+
+df$kilo<-NULL
+
+df[,c("yaslar","boylar")]
+
+df$kilo<-c(74,77,102)
+df
+```
+
+
+Data Frame Degisken Secimi
+```{r}
+df$isimler
+df$yaslar
+df$boylar
+```
+
+
+Data Frame Index ve Eleman Secimi
+```{r}
+
+df[ , kilo > 12]
+
+```
+
+
+Liste
+```{r}
+l<-list(
+  
+  a=1,
+  b=c(1,2,3,4,5),
+  c=rep(1:100)
+)
+l
+l[3]
+
+```
+
+
+Tibble
+```{r}
+
+```
+

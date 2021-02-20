@@ -1,0 +1,35 @@
+---
+title:"R Notebook"
+output:html_notebook
+---
+
+###Apply
+```{r}
+
+
+library(tidyverse)
+
+mpg
+
+df <- mpg[, c("displ","cyl","cty")]
+df
+
+apply(df, 2, sum)
+apply(df, 2, mean)
+apply(df, 2, function(x) x^2)
+
+```
+
+###Map
+```{r}
+
+library(purrr)
+
+mtcars %>%
+  split(.$cyl) %>%
+  map(~ lm(mpg ~ wt, data = .)) %>%
+  map(summary) %>%
+  map_dbl("r. squared")
+
+```
+

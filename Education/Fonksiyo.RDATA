@@ -1,0 +1,32 @@
+```{r}
+dk <- function(x) sd(x)/mean(x)
+dk(1:20)
+
+nd <- rnorm(100,4,sd=2)
+dk(nd)
+```
+```{r}
+f <- function(a,b){
+  print(a^2)
+  print(sqrt(b))
+}
+f(21,55)
+  
+```
+
+```{r}
+topla <- function(){
+  x <- readline(prompt = "İlk sayı : ")
+  y <- readline(prompt = "İkinci Sayı : ")
+  
+  x <- as.integer(x)
+  y <- as.integer(y)
+  
+  t <- paste("iki sayının toplamı : ", x+y)
+  print(t)
+}
+topla()
+
+```
+
+

@@ -1,0 +1,18 @@
+
+###.csv formatında kayıt edilmesi gerekir
+```{r}
+###getwd()_dosya_nerede
+###setwd()_dosyanın_klasörünü_ayarla
+
+data <- read.csv("data3.csv",header=T,sep=";")
+view(data)
+```
+```{r}
+data <- read.csv(file.choose(),header=T,sep=";")
+```
+
+###txt dosyalar
+```{r}
+data <- read.table("data3.txt",header=T,sep=";")
+```
+

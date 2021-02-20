@@ -1,0 +1,28 @@
+---
+title:"R Notebook"
+output:html_notebook
+---
+
+Karakter ve Kategorik Degisken:
+```{r}
+a <- "ali"
+typeof(a)
+
+
+x<-c("Ankara","İstanbul","İzmir")
+x
+typeof(x)
+
+factor(x)
+
+```
+
+
+Kategorik ve Sirali Kategorik Degisken
+```{r}
+
+rutbeler <- c("teğmen","üsteğmen","yüzbaşı","binbaşı","yarbay","albay","general")
+class(rutbeler)
+factor(rutbeler)
+ordered(rutbeler,levels=c("teğmen","üsteğmen","yüzbaşı","binbaşı","yarbay","albay","general"))
+```

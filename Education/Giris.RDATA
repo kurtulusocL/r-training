@@ -1,0 +1,50 @@
+
+```{r}
+5+5
+```
+```{r}
+example("mean")
+```
+
+```{r}
+pi
+print(pi)
+x <- pi
+print(x)
+
+sqrt(2)
+print(sqrt(2))
+y <- sqrt(2)
+print(y)
+```
+
+```{r}
+print(matrix(c(1,2,3,4),2,2))
+
+print(list("a","b","c"))
+```
+
+```{r}
+fib <- c(0,1,1,2,3,5,8,13,21,34)
+cat("ilk degerler : ",fib,"...\n")
+```
+
+```{r}
+a <- 5
+b <- 4
+z <- sqrt(x^2 + b^2)
+print(z)
+```
+
+```{r}
+x <- 30
+y <- 50
+z <- c("a","b","c")
+f <- function(n,p) sqrt(p*(1-p)/n)
+ls()
+ls.str()
+
+.stat <- 45
+ls(all.names = TRUE)
+```
+

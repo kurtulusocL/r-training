@@ -1,0 +1,25 @@
+```{r}
+veri1 <- data.frame()
+veri1 <- edit(veri1)
+veri1
+
+veri1.edit(veri1)
+```
+```{r}
+veri<-data.frame(x1=c(1,2,3,4,5,6))
+x2= c(3,4,5,6,7,8,9)
+x3= c(T,T,T,F,F,F)
+View(veri)
+
+pi
+pi*100
+print(pi, digits = 4)
+print(pi*100, digits=5)
+```
+```{r}
+q <- seq(from=0, to=3, by=0.5)
+tablo <- data.frame(x1=q, x2=rnorm(q), x3=rnorm(-q))
+tablo
+print(tablo, digits = 4) 
+```
+
